@@ -99,7 +99,7 @@
   {% unless same_vendor and current_product.vendor != product.vendor %}
   {% unless same_type and current_product.type != product.type %}
   <div class="grid__item {{ grid_item_width }}">
-    {% include 'product-card', max_height: max_height %}
+    {% include 'product-thumbnail', max_height: max_height %}
   </div>
   {% assign counter = counter | plus: 1 %}
   {% if counter == break_at %}
