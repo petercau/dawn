@@ -39,9 +39,6 @@ https://www.shopify.com.au/partners/blog/related-products
   Looking for a relevant collection.
 {% endcomment %}
 
-  {% for m in collections.all_types  %}
-  {{m}}
-  {% endfor %}
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
 {% endif %}
