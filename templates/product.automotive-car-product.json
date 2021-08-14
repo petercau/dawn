@@ -28,11 +28,6 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -49,7 +44,6 @@
         "title",
         "subtitle",
         "variant_picker",
-        "quantity_selector",
         "description",
         "share"
       ],
@@ -68,10 +62,47 @@
         "show_image_outline": true,
         "show_vendor": false
       }
+    },
+    "1628924154d55f5ea1": {
+      "type": "collection-list",
+      "blocks": {
+        "1628924154d55f5ea1-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1628924154d55f5ea1-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1628924154d55f5ea1-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1628924154d55f5ea1-0",
+        "1628924154d55f5ea1-1",
+        "1628924154d55f5ea1-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1628924154d55f5ea1"
   ]
 }
