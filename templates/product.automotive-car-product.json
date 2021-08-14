@@ -55,7 +55,10 @@
     "a-custom-related-products": {
       "type": "a-custom-related-products",
       "settings": {
-        "show_related_products": true
+        "show_related_products": true,
+        "related_title": "Other fine products",
+        "related_grid_num": "4",
+        "related_grid_row": "1"
       }
     },
     "product-recommendations": {
@@ -68,27 +71,11 @@
         "show_image_outline": true,
         "show_vendor": false
       }
-    },
-    "16289250207c37b039": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Compatible batteries",
-        "collection": "bmw-318i-e30-1983-1991-compatible-batteries",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false
-      }
     }
   },
   "order": [
     "main",
     "a-custom-related-products",
-    "product-recommendations",
-    "16289250207c37b039"
+    "product-recommendations"
   ]
 }
