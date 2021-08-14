@@ -104,6 +104,7 @@ https://www.shopify.com.au/partners/blog/related-products
   {% comment %} 
     Replace 'test' below with prefered tag 
   {% endcomment %}
+  {{ product.tags}}
   {% if product.tags contains  'test' %} 
   <div class="grid__item {{ grid_item_width }}">
     {% include 'product-card', max_height: max_height %}
