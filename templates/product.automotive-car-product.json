@@ -60,22 +60,10 @@
         "related_grid_num": "4",
         "related_grid_row": "1"
       }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "Compatible batteries",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false
-      }
     }
   },
   "order": [
     "main",
-    "a-custom-related-products",
-    "product-recommendations"
+    "a-custom-related-products"
   ]
 }
