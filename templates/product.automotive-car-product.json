@@ -54,6 +54,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
@@ -74,12 +75,14 @@
         },
         "1628924154d55f5ea1-1": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": ""
           }
         },
         "1628924154d55f5ea1-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": ""
           }
