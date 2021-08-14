@@ -106,7 +106,7 @@ https://www.shopify.com.au/partners/blog/related-products
   {% endcomment %}
   {% if product.tags contains  'test' %} 
   <div class="grid__item {{ grid_item_width }}">
-    {% include 'product-card-grid', max_height: max_height %}
+    {% include 'product-card', max_height: max_height %}
   </div>
   {% assign counter = counter | plus: 1 %}
   {% if counter == break_at %}
