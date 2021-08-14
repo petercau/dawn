@@ -55,6 +55,7 @@
     "a-custom-related-products": {
       "type": "a-custom-related-products",
       "settings": {
+        "show_related_products": true
       }
     },
     "product-recommendations": {
