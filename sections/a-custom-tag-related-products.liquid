@@ -68,7 +68,7 @@
 {% unless found_a_collection %}
   {% for c in product.collections %}
     {% unless exclusions contains c.handle or c.all_products_count < 2 %}
-  	{% unless c.title contains 'compatible' %}
+  	{% unless c.title contains 'Compatible' %}
       {% assign found_a_collection = true %}
       {% assign collection = c %}
       {% break %}
