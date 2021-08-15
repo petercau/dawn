@@ -70,7 +70,7 @@
     assign more_in_collection = true
   endif
 -%}
-
+{{collection.all_products_count}}
 {% unless found_a_collection %}
   {% for c in product.collections %}
     {% unless exclusions contains c.handle or c.all_products_count < 1 %}
