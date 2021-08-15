@@ -52,14 +52,34 @@
         "enable_video_looping": false
       }
     },
+    "a-custom-related-products": {
+      "type": "a-custom-related-products",
+      "settings": {
+        "show_related_products": true,
+        "related_title": "Other fine products",
+        "related_grid_num": "4",
+        "related_grid_row": "1"
+      }
+    },
     "a-custom-tag-related-products": {
       "type": "a-custom-tag-related-products",
       "settings": {
+        "title": "Batteries",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     }
   },
   "order": [
     "main",
+    "a-custom-related-products",
     "a-custom-tag-related-products"
   ]
 }
