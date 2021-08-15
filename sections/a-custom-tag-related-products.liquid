@@ -62,15 +62,6 @@
   {% endunless %}
 {% endif %}
 
-{%- liquid
-  assign products_to_display = collection.all_products_count
-
-  if collection.all_products_count > section.settings.products_to_show
-    assign products_to_display = section.settings.products_to_show
-    assign more_in_collection = true
-  endif
--%}
-{{collection.all_products_count}}
 {% unless found_a_collection %}
   {% for c in product.collections %}
     {% unless exclusions contains c.handle or c.all_products_count < 1 %}
@@ -83,6 +74,16 @@
   	{% endunless %}
   {% endfor %}
 {% endunless %}
+
+{%- liquid
+  assign products_to_display = collection.all_products_count
+
+  if collection.all_products_count > section.settings.products_to_show
+    assign products_to_display = section.settings.products_to_show
+    assign more_in_collection = true
+  endif
+-%}
+{{products_to_display}}
 
 {% comment %}
   If we have a relevant collection.
