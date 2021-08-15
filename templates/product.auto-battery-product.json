@@ -86,7 +86,7 @@
       "settings": {
         "title": "Compatible Vehicles",
         "collection": "",
-        "products_to_show": 4,
+        "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
