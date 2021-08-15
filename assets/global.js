@@ -626,26 +626,3 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
-
-
-onVariantChange() {
-  this.updateOptions();
-  this.updateMasterId();
-  this.toggleAddButton(true, '', false);
-  this.updatePickupAvailability();
-
-  if (!this.currentVariant) {
-    this.toggleAddButton(true, '', true);
-    this.setUnavailable();
-  } else {
-    this.updateMedia();
-    this.updateURL();
-    this.updateVariantInput();
-    this.renderProductInfo();
-  }
-  // When variant is changed post a message with the variant's data
-  window.postMessage({
-    type: 'variant_changed',
-    variant: this.currentVariant
-  }, '*')
-}
