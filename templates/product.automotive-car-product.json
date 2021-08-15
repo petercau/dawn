@@ -85,7 +85,7 @@
     "a-custom-tag-related-products": {
       "type": "a-custom-tag-related-products",
       "settings": {
-        "title": "Starting Batteries",
+        "title": "Starting batteries for this vehicle",
         "collection": "",
         "products_to_show": 4,
         "show_view_all": true,
