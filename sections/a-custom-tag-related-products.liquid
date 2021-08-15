@@ -16,7 +16,7 @@
     assign more_in_collection = true
   endif
 -%}
-
+adsadasd
 <hr>
 <div class="product-template__container page-width" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
  
@@ -53,7 +53,7 @@
 {% comment %}
   Looking for a relevant collection.
 {% endcomment %}
-{{collection.all_products_count}}
+{{number_of_rows}}
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
   {{collection.all_products_count}}
