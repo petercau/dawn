@@ -109,6 +109,7 @@
     },
     "a-custom-tag-past-and-future-generations": {
       "type": "a-custom-tag-past-and-future-generations",
+      "disabled": true,
       "settings": {
         "title": "Past and Future Generations",
         "collection": "",
@@ -166,6 +167,7 @@
     },
     "1629030810640eccf1": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "",
