@@ -81,6 +81,21 @@
         "enable_video_looping": false
       }
     },
+    "a-custom-tag-related-vehicles": {
+      "type": "a-custom-tag-related-vehicles",
+      "settings": {
+        "title": "Compatible Vehicles",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": true,
+        "show_vendor": true
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -96,6 +111,7 @@
   },
   "order": [
     "main",
+    "a-custom-tag-related-vehicles",
     "product-recommendations"
   ]
 }
