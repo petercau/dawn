@@ -47,6 +47,15 @@
             "icon": "star"
           }
         },
+        "1ed993b2-2e58-410c-a5c4-697eda7d38a5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Past and Future Generations",
+            "content": "",
+            "page": "",
+            "icon": "leaf"
+          }
+        },
         "f7bbc38d-2e9a-4095-831d-c9952e9a7447": {
           "type": "collapsible_tab",
           "settings": {
@@ -74,6 +83,7 @@
         "variant_picker",
         "description",
         "c5464ca8-87a0-4671-a635-822e914f15e2",
+        "1ed993b2-2e58-410c-a5c4-697eda7d38a5",
         "f7bbc38d-2e9a-4095-831d-c9952e9a7447",
         "644bac3b-1e08-46be-8d67-d71324c282fc"
       ],
