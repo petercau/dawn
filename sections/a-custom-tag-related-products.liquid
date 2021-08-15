@@ -53,7 +53,7 @@
 {% comment %}
   Looking for a relevant collection.
 {% endcomment %}
-
+{{collection.all_products_count}}
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
   {{collection.all_products_count}}
