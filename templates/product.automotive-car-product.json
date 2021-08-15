@@ -42,7 +42,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Starting Batteries",
-            "content": "<p><a href=\"#\" title=\"Battery Options\">Battery Options<\/a><\/p>",
+            "content": "<p><a href=\"#@a\" title=\"#@a\">Battery Options<\/a><\/p>",
             "page": "",
             "icon": "star"
           }
