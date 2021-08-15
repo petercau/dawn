@@ -16,7 +16,7 @@
   {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
   {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
   {%- assign preview_image = product.featured_media.preview_image -%}
-  {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_533x.' -%}
+  {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
   {% unless preview_image == blank %}
     {% include 'a-custom-image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
@@ -25,7 +25,6 @@
   <div class="product-card__image-with-placeholder-wrapper" data-image-loading-animation>
     <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
       <div style="padding-top:{% unless preview_image == blank %}{{ 1 | divided_by: preview_image.aspect_ratio | times: 100 }}%{% else %}100%{% endunless %};">
-        {% comment %}
         <img id="{{ img_id }}"
               class="grid-view-item__image lazyload"
               alt="{{ preview_image.alt }}"
@@ -33,45 +32,7 @@
               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
               data-aspectratio="{{ preview_image.aspect_ratio }}"
               data-sizes="auto"
-              data-image />
-        
-        <% endcomment %>
-        {%- if product.featured_media -%}
-        
-          {%- liquid
-            assign featured_media_aspect_ratio = product.featured_media.aspect_ratio
-
-            if product.featured_media.aspect_ratio == nil
-              assign featured_media_aspect_ratio = 1
-            endif
-          -%}
-
-          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
-            <div class="media media--transparent media--{{ media_size }} media--hover-effect"
-              {% if media_size == 'adapt' and product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
-            >
-              <img id="{{ img_id }}" 
-                srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
-                  {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
-                  {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | img_url: '533x' }} 533w,{%- endif -%}
-                  {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | img_url: '720x' }} 720w,{%- endif -%}
-                  {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | img_url: '940x' }} 940w,{%- endif -%}
-                  {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | img_url: '1066x' }} 1066w{%- endif -%}"
-                src="{{ product.featured_media | img_url: '533x' }}"
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                alt="{{ preview_image.alt | escape }}"
-                loading="lazy"
-                class="motion-reduce"
-                width="{{ product.featured_media.width }}"
-                height="{{ product.featured_media.height }}"
-              >
-              
-            </div>
-          </div>
-        {%- else -%}
-          <div class="card__content"><h2 class="card__text h3">{{ product.title }}</h2></div>
-        {%- endif -%}
-        {% endcomment %}
+              data-image>
       </div>
     </div>
   </div>
