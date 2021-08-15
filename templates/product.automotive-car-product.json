@@ -64,6 +64,13 @@
             "page": "bmw-e30-batteries",
             "icon": "box"
           }
+        },
+        "f7b2202a-497b-4d97-9de8-c32c5325af18": {
+          "type": "popup",
+          "settings": {
+            "link_label": "Pop-up link text",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -75,7 +82,8 @@
         "share",
         "c5464ca8-87a0-4671-a635-822e914f15e2",
         "f7bbc38d-2e9a-4095-831d-c9952e9a7447",
-        "644bac3b-1e08-46be-8d67-d71324c282fc"
+        "644bac3b-1e08-46be-8d67-d71324c282fc",
+        "f7b2202a-497b-4d97-9de8-c32c5325af18"
       ],
       "settings": {
         "enable_sticky_info": true,
