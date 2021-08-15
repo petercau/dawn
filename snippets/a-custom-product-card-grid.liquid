@@ -46,10 +46,6 @@
             endif
           -%}
 
-          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
-            <div class="media media--transparent media--{{ media_size }} media--hover-effect"
-              {% if media_size == 'adapt' and product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
-            >
               <img id="{{ img_id }}" 
                 srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
                   {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
@@ -66,10 +62,7 @@
                 height="{{ product.featured_media.height }}"
               >
               
-            </div>
-          </div>
-        {%- else -%}
-          <div class="card__content"><h2 class="card__text h3">{{ product.title }}</h2></div>
+      
         {%- endif -%}
         
       </div>
