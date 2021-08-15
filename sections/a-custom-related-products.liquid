@@ -38,6 +38,7 @@
 
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
+  {{related}}
 {% endif %}
 
 {% assign found_a_collection = false %}
