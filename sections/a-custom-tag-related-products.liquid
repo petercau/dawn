@@ -52,11 +52,11 @@
 
 {% comment %}
   Looking for a relevant collection.
-{% endcomment %}
 
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
 {% endif %}
+{% endcomment %}
 
 {% assign found_a_collection = false %}
 {% if collection and collection.all_products_count > 1 %}
