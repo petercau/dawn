@@ -55,10 +55,16 @@
     "a-custom-related-products": {
       "type": "a-custom-related-products",
       "settings": {
-        "show_related_products": true,
-        "related_title": "Applicable batteries",
-        "related_grid_num": "4",
-        "related_grid_row": "2"
+        "title": "A",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     },
     "1628986764d2081ed2": {
@@ -75,48 +81,11 @@
         "show_image_outline": true,
         "show_vendor": false
       }
-    },
-    "162898715694ce5bac": {
-      "type": "collection-list",
-      "blocks": {
-        "162898715694ce5bac-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "toyota-landcruiser-300-2022-compatible-batteries"
-          }
-        },
-        "162898715694ce5bac-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "162898715694ce5bac-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "162898715694ce5bac-0",
-        "162898715694ce5bac-1",
-        "162898715694ce5bac-2"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
     }
   },
   "order": [
     "main",
     "a-custom-related-products",
-    "1628986764d2081ed2",
-    "162898715694ce5bac"
+    "1628986764d2081ed2"
   ]
 }
