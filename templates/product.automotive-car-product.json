@@ -56,6 +56,15 @@
             "icon": "ruler"
           }
         },
+        "734ceee7-a6eb-4ef7-a643-218b6ec61467": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Past & Future Generations",
+            "content": "",
+            "page": "",
+            "icon": "leaf"
+          }
+        },
         "644bac3b-1e08-46be-8d67-d71324c282fc": {
           "type": "collapsible_tab",
           "settings": {
@@ -75,6 +84,7 @@
         "description",
         "c5464ca8-87a0-4671-a635-822e914f15e2",
         "f7bbc38d-2e9a-4095-831d-c9952e9a7447",
+        "734ceee7-a6eb-4ef7-a643-218b6ec61467",
         "644bac3b-1e08-46be-8d67-d71324c282fc"
       ],
       "settings": {
