@@ -30,6 +30,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -40,6 +41,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_dynamic_checkout": true
           }
         },
         "description": {
@@ -50,6 +52,15 @@
         "share": {
           "type": "share",
           "settings": {
+          }
+        },
+        "cff08892-9559-4922-975d-b11aaf6d223c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Compatible Vehicles",
+            "content": "<p>{{ product.metafields.my_fields.compatible_vehicles_x55d23l | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "check_mark"
           }
         }
       },
@@ -62,14 +73,23 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "cff08892-9559-4922-975d-b11aaf6d223c"
       ],
       "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     }
   },
