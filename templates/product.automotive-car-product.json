@@ -51,7 +51,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Past and Future Generations",
-            "content": "",
+            "content": "<p><a href=\"#othergenerations\" title=\"#othergenerations\">Other Generations<\/a><\/p>",
             "page": "",
             "icon": "leaf"
           }
