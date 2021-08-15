@@ -26,7 +26,7 @@
               {%- endunless -%}
 
               {%- for filter in collection.filters -%}
-                {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+                {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}{{filter.type}}
                 {% case filter.type %}
                 {% when 'list' %}
                   <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
