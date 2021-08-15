@@ -82,6 +82,21 @@
         "enable_video_looping": false
       }
     },
+    "a-custom-tag-related-products": {
+      "type": "a-custom-tag-related-products",
+      "settings": {
+        "title": "Starting Batteries",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": true,
+        "show_vendor": true
+      }
+    },
     "16290082526146a542": {
       "type": "multicolumn",
       "blocks": {
@@ -123,21 +138,6 @@
         "swipe_on_mobile": false
       }
     },
-    "a-custom-tag-related-products": {
-      "type": "a-custom-tag-related-products",
-      "settings": {
-        "title": "Batteries",
-        "collection": "",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": true,
-        "show_image_outline": true,
-        "show_vendor": true
-      }
-    },
     "1629008297f89441da": {
       "type": "rich-text",
       "blocks": {
@@ -176,8 +176,8 @@
   },
   "order": [
     "main",
-    "16290082526146a542",
     "a-custom-tag-related-products",
+    "16290082526146a542",
     "1629008297f89441da"
   ]
 }
