@@ -103,11 +103,7 @@
 
   {% capture related_items %}
 <div class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
-
-  {% for product in collection.products %}  
-  {% unless product.handle == current_product.handle %}
-  {% unless same_vendor and current_product.vendor != product.vendor %}
-  {% unless same_type and current_product.type != product.type %}
+  
   {% comment %}
   <div class="grid__item {{ grid_item_width }}">
     {% include 'a-custom-product-card-grid', max_height: max_height, media_size: 'adapt' %}
@@ -125,7 +121,12 @@
 
   <slider-component class="slider-mobile-gutter">
     <ul class="grid grid--2-col product-grid{% if products_to_display == 4 or section.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or section.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and section.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
-      {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+      
+      {%- for product in collection.products limit: section.settings.products_to_show -%}  
+      {% unless product.handle == current_product.handle %}		
+      {% unless same_vendor and current_product.vendor != product.vendor %}
+      {% unless same_type and current_product.type != product.type %}
+      
         <li class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
           {% render 'product-card',
             product_card_product: product,
@@ -142,7 +143,14 @@
             {% render 'product-card-placeholder' %}
           </li>
         {%- endfor -%}
-      {%- endfor -%}
+      {% assign counter = counter | plus: 1 %}
+      {% if counter == break_at %}
+      {% break %}
+      {% endif %}
+      {% endunless %}
+      {% endunless %}
+      {% endunless %}
+      {% endfor %}
     </ul>
     {%- if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
       <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
@@ -170,14 +178,7 @@
   {%- endif -%}
 </div>
   
-  {% assign counter = counter | plus: 1 %}
-  {% if counter == break_at %}
-  {% break %}
-  {% endif %}
-  {% endunless %}
-  {% endunless %}
-  {% endunless %}
-  {% endfor %}
+
 </div>
   {% endcapture %}
 
