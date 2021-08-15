@@ -163,12 +163,28 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1629030810640eccf1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "",
+        "products_to_show": 2,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": true,
+        "show_vendor": true
+      }
     }
   },
   "order": [
     "main",
     "a-custom-tag-related-products",
     "a-custom-tag-past-and-future-generations",
-    "16290082526146a542"
+    "16290082526146a542",
+    "1629030810640eccf1"
   ]
 }
