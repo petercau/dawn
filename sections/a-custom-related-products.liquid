@@ -48,9 +48,9 @@
             show_image_outline: section.settings.show_image_outline
           %}
         </li>
-      {%- else -%}
-      	{{product}}
+      {%- else -%}      	
         {%- for i in (1..4) -%}
+      {{product}}
           <li class="grid__item">
             {% render 'product-card-placeholder' %}
           </li>
