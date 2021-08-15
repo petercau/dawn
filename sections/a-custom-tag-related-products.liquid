@@ -21,7 +21,7 @@
     <h2 class="title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
 
     {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and more_in_collection -%}
-      <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+      <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.tagged_related_products.view_all' | t }}</a>
     {%- endif -%}
   </div>
 
@@ -64,9 +64,9 @@
     <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
       <a href="{{ section.settings.collection.url }}"
         class="button"
-        aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
+        aria-label="{{ 'sections.tagged_related_products.view_all_label' | t: collection_name: section.settings.collection.title }}"
       >
-        {{ 'sections.featured_collection.view_all' | t }}
+        {{ 'sections.tagged_related_products.view_all' | t }}
       </a>
     </div>
   {%- endif -%}
