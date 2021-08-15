@@ -127,7 +127,7 @@
   		{% unless same_vendor and current_product.vendor != product.vendor %}
   		{% unless same_type and current_product.type != product.type %}
         <li class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
-          {% render 'product-card',
+          {% render 'a-custom-product-card',
             product_card_product: product,
             media_size: section.settings.image_ratio,
             show_secondary_image: section.settings.show_secondary_image,
