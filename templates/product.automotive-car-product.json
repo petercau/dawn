@@ -46,6 +46,24 @@
             "page": "",
             "icon": "check_mark"
           }
+        },
+        "f7bbc38d-2e9a-4095-831d-c9952e9a7447": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "644bac3b-1e08-46be-8d67-d71324c282fc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
         }
       },
       "block_order": [
@@ -55,7 +73,9 @@
         "variant_picker",
         "description",
         "share",
-        "c5464ca8-87a0-4671-a635-822e914f15e2"
+        "c5464ca8-87a0-4671-a635-822e914f15e2",
+        "f7bbc38d-2e9a-4095-831d-c9952e9a7447",
+        "644bac3b-1e08-46be-8d67-d71324c282fc"
       ],
       "settings": {
         "enable_sticky_info": true,
