@@ -75,8 +75,7 @@
   {% endfor %}
 {% endunless %}
 
-{%- liquid
-  assign products_to_display = collection.all_products_count
+{%- liquid  
 
   if collection.all_products_count > section.settings.products_to_show
     assign products_to_display = section.settings.products_to_show
