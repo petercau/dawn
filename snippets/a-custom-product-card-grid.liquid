@@ -34,8 +34,8 @@
               data-aspectratio="{{ preview_image.aspect_ratio }}"
               data-sizes="auto"
               data-image>
-        {% endcomment %}
         
+        <% endcomment %>
         {%- if product.featured_media -%}
         
           {%- liquid
@@ -46,6 +46,10 @@
             endif
           -%}
 
+          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
+            <div class="media media--transparent media--{{ media_size }} media--hover-effect"
+              {% if media_size == 'adapt' and product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
+            >
               <img id="{{ img_id }}" 
                 srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
                   {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
@@ -60,15 +64,14 @@
                 class="motion-reduce"
                 width="{{ product.featured_media.width }}"
                 height="{{ product.featured_media.height }}"
-                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-              data-aspectratio="{{ preview_image.aspect_ratio }}"
-              data-sizes="auto"
-              data-image
               >
               
-      
+            </div>
+          </div>
+        {%- else -%}
+          <div class="card__content"><h2 class="card__text h3">{{ product.title }}</h2></div>
         {%- endif -%}
-        
+        {% endcomment %}
       </div>
     </div>
   </div>
