@@ -52,15 +52,6 @@
         "enable_video_looping": false
       }
     },
-    "a-custom-related-products": {
-      "type": "a-custom-related-products",
-      "settings": {
-        "show_related_products": true,
-        "related_title": "Other fine products",
-        "related_grid_num": "4",
-        "related_grid_row": "1"
-      }
-    },
     "a-custom-tag-related-products": {
       "type": "a-custom-tag-related-products",
       "settings": {
@@ -79,7 +70,6 @@
   },
   "order": [
     "main",
-    "a-custom-related-products",
     "a-custom-tag-related-products"
   ]
 }
