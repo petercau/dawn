@@ -35,10 +35,9 @@
 {% comment %}
   Looking for a relevant collection.
 {% endcomment %}
-  {{exclusions}}
+
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
-  {{exclusions}}
 {% endif %}
 
 {% assign found_a_collection = false %}
@@ -151,7 +150,7 @@
       "id": "related_title",
       "type": "text",
       "label": "Section title",
-      "default": "Related products"
+      "default": "Other fine products"
     },
     {
       "type": "select",
