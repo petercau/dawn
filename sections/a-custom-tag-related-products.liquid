@@ -8,6 +8,7 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% comment %}
 {%- liquid
   assign products_to_display = section.settings.collection.all_products_count
 
@@ -16,6 +17,7 @@
     assign more_in_collection = true
   endif
 -%}
+{% endcomment %}
 
 {% comment %}
   Number of related items per row,
@@ -75,7 +77,8 @@
   {% endfor %}
 {% endunless %}
 
-{%- liquid  
+{%- liquid
+  assign products_to_display = collection.all_products_count
 
   if collection.all_products_count > section.settings.products_to_show
     assign products_to_display = section.settings.products_to_show
@@ -89,6 +92,7 @@
 {% endcomment %}
 
 {% if found_a_collection %}
+{{products_to_display}}
 {{collection.all_products_count}}
 <hr>
 <div class="product-template__container page-width" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true"> 
