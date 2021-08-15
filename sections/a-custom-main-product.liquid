@@ -20,26 +20,28 @@
 <section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
+
       <product-gallery class="product-gallery">
-  {%- if product.media.size > 1 -%}
-  <ul class="product-gallery__nav">
-    {%- for media in product.media -%}
-      <li class="product-gallery__nav-item {% if media.id == product.selected_or_first_available_variant.featured_media.id %}product-gallery__nav-item--active{% endif %}" data-media-id="{{ media.id }}">
-        {% render 'product-thumbnail', media: media %}
-      </li>
-    {%- endfor -%}
-  </ul>
-  {%- endif -%}
-  <div class="product-gallery__images">
-    {%- for media in product.media -%}
-      <div class="product-gallery__image {% if media.id == product.selected_or_first_available_variant.featured_media.id or product.media.size == 1 %}product-gallery__image--active{% endif %}" data-media-id="{{ media.id }}">
-        {% render 'product-thumbnail', media: media %}
-      </div>
-    {%- endfor -%}
-    <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-    <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-  </div>
-</product-gallery>
+        {%- if product.media.size > 1 -%}
+        <ul class="product-gallery__nav">
+          {%- for media in product.media -%}
+            <li class="product-gallery__nav-item {% if media.id == product.selected_or_first_available_variant.featured_media.id %}product-gallery__nav-item--active{% endif %}" data-media-id="{{ media.id }}">
+              {% render 'product-thumbnail', media: media %}
+            </li>
+          {%- endfor -%}
+        </ul>
+        {%- endif -%}
+        <div class="product-gallery__images">
+          {%- for media in product.media -%}
+            <div class="product-gallery__image {% if media.id == product.selected_or_first_available_variant.featured_media.id or product.media.size == 1 %}product-gallery__image--active{% endif %}" data-media-id="{{ media.id }}">
+              {% render 'product-thumbnail', media: media %}
+            </div>
+          {%- endfor -%}
+          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+        </div>
+      </product-gallery>
+      
       {%- if first_3d_model -%}
         <button
           class="button button--full-width product__xr-button"
