@@ -35,7 +35,7 @@
 {% comment %}
   Looking for a relevant collection.
 {% endcomment %}
-
+  {{related}}
 {% if product.metafields.c_f['Related Products'] %}
   {% assign collection = collections[product.metafields.c_f['Related Products']] %}
   {{related}}
