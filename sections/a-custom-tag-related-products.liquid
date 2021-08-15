@@ -68,11 +68,12 @@
 {% unless found_a_collection %}
   {% for c in product.collections %}
     {% unless exclusions contains c.handle or c.all_products_count < 2 %}
-  	{{c.title}}
+  	{% unless c.title contains 'compatible' %}
       {% assign found_a_collection = true %}
       {% assign collection = c %}
       {% break %}
     {% endunless %}
+  	{% endunless %}
   {% endfor %}
 {% endunless %}
 
