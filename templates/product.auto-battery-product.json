@@ -58,7 +58,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Compatible Vehicles",
-            "content": "<p>{{ product.metafields.my_fields.compatible_vehicles_x55d23l | metafield_tag }}<\/p>",
+            "content": "<p><a href=\"#compatiblevehicles\" title=\"#compatiblevehicles\">Compatible Vehicles<\/a><\/p>",
             "page": "",
             "icon": "check_mark"
           }
