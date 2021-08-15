@@ -148,7 +148,7 @@
         {% unless product.handle == current_product.handle %}
   		{% unless same_vendor and current_product.vendor != product.vendor %}
   		{% unless same_type and current_product.type != product.type %}
-        <li class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">          
+        <li class="grid__item{% if collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">          
           {% render 'a-custom-product-card',
             product_card_product: product,
             media_size: section.settings.image_ratio,
@@ -170,8 +170,8 @@
       {%- endfor -%}
       
     </ul>
-    {%- if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
-      <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
+    {%- if collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
+      <div class="slider-buttons no-js-hidden{% if collection.all_products_count < 4 %} medium-hide{% endif %}{% if collection.all_products_count < 3 %} small-hide{% endif %}">
         <div class="slider-counter caption">
           <span class="slider-counter--current">1</span>
           <span aria-hidden="true"> / </span>
