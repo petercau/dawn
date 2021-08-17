@@ -62,7 +62,7 @@
             "heading": "Dimensions & Fitment",
             "content": "",
             "page": "",
-            "icon": "ruler"
+            "icon": "box"
           }
         },
         "644bac3b-1e08-46be-8d67-d71324c282fc": {
@@ -71,7 +71,7 @@
             "heading": "Delivery",
             "content": "",
             "page": "bmw-e30-batteries",
-            "icon": "box"
+            "icon": "truck"
           }
         },
         "93c6f1ac-7d9d-4ecb-961d-8e9104e92351": {
@@ -81,6 +81,15 @@
             "content": "",
             "page": "",
             "icon": "check_mark"
+          }
+        },
+        "d8691ac4-f06b-4509-915d-c689a121010d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Required Tools",
+            "content": "",
+            "page": "",
+            "icon": "lock"
           }
         }
       },
@@ -95,7 +104,8 @@
         "1ed993b2-2e58-410c-a5c4-697eda7d38a5",
         "f7bbc38d-2e9a-4095-831d-c9952e9a7447",
         "644bac3b-1e08-46be-8d67-d71324c282fc",
-        "93c6f1ac-7d9d-4ecb-961d-8e9104e92351"
+        "93c6f1ac-7d9d-4ecb-961d-8e9104e92351",
+        "d8691ac4-f06b-4509-915d-c689a121010d"
       ],
       "settings": {
         "enable_sticky_info": true,
